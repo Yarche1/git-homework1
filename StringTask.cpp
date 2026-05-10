@@ -44,7 +44,7 @@ public:
         length = new_len;
     }
 
-    // 1. Contains: перевірка наявності підрядка
+
     bool Contains(const char* sub) const {
         int sub_len = GetStrLen(sub);
         if (sub_len == 0) return true;
@@ -58,7 +58,7 @@ public:
         return false;
     }
 
-    // 2. Count: кількість входжень
+
     int Count(const char* sub) const {
         int sub_len = GetStrLen(sub);
         if (sub_len == 0) return 0;
@@ -73,7 +73,7 @@ public:
         return count;
     }
 
-    // 3. Insert: вставка у позицію
+    
     void Insert(int pos, const char* sub) {
         if (pos < 0 || pos > length) return;
         int sub_len = GetStrLen(sub);
@@ -88,7 +88,7 @@ public:
         length = new_len;
     }
 
-    // 4. Remove (Replace All): заміна всіх входжень
+    
     void Remove(const char* old_sub, const char* new_sub) {
         int old_len = GetStrLen(old_sub);
         int new_sub_len = GetStrLen(new_sub);
